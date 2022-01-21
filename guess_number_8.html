@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Guess a number</title>
+</head>
+<body>
+    <script type="text/javascript">
+    function guess(){
+    while (true) {
+    var randomNumber = Math.floor(Math.random() * 10);
+    var guessNumber = prompt("enter a number between 1 and 10");
+    if (!guessNumber) {                                
+        break;                                         
+    }                                                  
+    if (guessNumber == randomNumber) 
+    {
+        alert("Good work!");
+    } 
+    else 
+    {
+        alert("Loser! The number was " + randomNumber);
+    }
+}
+    </script>
+</body>
+</html>

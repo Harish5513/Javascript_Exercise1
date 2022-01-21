@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <title>
+        getting current webpage url
+    </title>
+</head>
+  
+<body>
+    <button onclick="GetURL()"> Get URL </button>
+    <p id="url"></p>
+ 
+    <script>
+    function GetURL() {
+        var web = document.URL;
+        document.getElementById("url").innerHTML = web;
+    }
+    </script>
+</body>
+  
